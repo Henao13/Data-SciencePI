@@ -27,3 +27,6 @@ dist/
 # Logs and databases
 *.log
 *.sqlite3
+
+models/*.pkl
+
