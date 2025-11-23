@@ -1,0 +1,9 @@
+{
+  "best_params": {
+    "max_depth": 12,
+    "max_features": 0.8,
+    "min_samples_leaf": 2,
+    "n_estimators": 543
+  },
+  "best_score_cv": 0.46723086554549287
+}

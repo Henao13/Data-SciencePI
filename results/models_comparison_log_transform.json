@@ -1,0 +1,79 @@
+[
+  {
+    "Modelo": "Extra Trees",
+    "R\u00b2_test_orig": 0.34392755640626615,
+    "RMSE_test_orig": 746.9012202778156,
+    "MAE_test_orig": 315.8372080950267,
+    "R\u00b2_test_log": 0.5992387114054589
+  },
+  {
+    "Modelo": "Random Forest",
+    "R\u00b2_test_orig": 0.29996597121258417,
+    "RMSE_test_orig": 771.5193918800073,
+    "MAE_test_orig": 327.73787634322576,
+    "R\u00b2_test_log": 0.5804685818035725
+  },
+  {
+    "Modelo": "CatBoost",
+    "R\u00b2_test_orig": 0.28020803490868285,
+    "RMSE_test_orig": 782.3314110135285,
+    "MAE_test_orig": 340.89694694241393,
+    "R\u00b2_test_log": 0.5805979337954533
+  },
+  {
+    "Modelo": "XGBoost",
+    "R\u00b2_test_orig": 0.2744456441825165,
+    "RMSE_test_orig": 785.4566978144375,
+    "MAE_test_orig": 340.27862908430365,
+    "R\u00b2_test_log": 0.5843169984392445
+  },
+  {
+    "Modelo": "LightGBM",
+    "R\u00b2_test_orig": 0.24604240661382704,
+    "RMSE_test_orig": 800.6832260010748,
+    "MAE_test_orig": 347.28006065030655,
+    "R\u00b2_test_log": 0.5791995123573823
+  },
+  {
+    "Modelo": "Gradient Boosting",
+    "R\u00b2_test_orig": 0.20853837304534306,
+    "RMSE_test_orig": 820.3557043036107,
+    "MAE_test_orig": 363.1883235057545,
+    "R\u00b2_test_log": 0.531216962747367
+  },
+  {
+    "Modelo": "Decision Tree",
+    "R\u00b2_test_orig": -0.10996881344436749,
+    "RMSE_test_orig": 971.4996732990602,
+    "MAE_test_orig": 444.2957048389149,
+    "R\u00b2_test_log": 0.22291740334138233
+  },
+  {
+    "Modelo": "Linear Regression",
+    "R\u00b2_test_orig": -1.4297986597725285,
+    "RMSE_test_orig": 1437.382703813519,
+    "MAE_test_orig": 498.95770267701283,
+    "R\u00b2_test_log": 0.23769768358812382
+  },
+  {
+    "Modelo": "Ridge Regression",
+    "R\u00b2_test_orig": -1.4298109015359608,
+    "RMSE_test_orig": 1437.3863247054778,
+    "MAE_test_orig": 498.9579665186595,
+    "R\u00b2_test_log": 0.23769770984690552
+  },
+  {
+    "Modelo": "Elastic Net",
+    "R\u00b2_test_orig": -1.5511757562806903,
+    "RMSE_test_orig": 1472.8464087277443,
+    "MAE_test_orig": 502.43247728429435,
+    "R\u00b2_test_log": 0.23165456347796964
+  },
+  {
+    "Modelo": "Lasso Regression",
+    "R\u00b2_test_orig": -1.5859191434313118,
+    "RMSE_test_orig": 1482.8415311388596,
+    "MAE_test_orig": 502.59820506539916,
+    "R\u00b2_test_log": 0.23079172764220235
+  }
+]

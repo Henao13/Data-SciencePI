@@ -1,0 +1,68 @@
+[
+  {
+    "Modelo": "Extra Trees",
+    "R2_train_log": 0.9996642904064809,
+    "R2_test_log": 0.5992387114054589,
+    "Overfitting_log": 0.40042557900102194
+  },
+  {
+    "Modelo": "XGBoost",
+    "R2_train_log": 0.6946944521563029,
+    "R2_test_log": 0.5843169984392445,
+    "Overfitting_log": 0.11037745371705843
+  },
+  {
+    "Modelo": "CatBoost",
+    "R2_train_log": 0.6913742587816228,
+    "R2_test_log": 0.5805979337954533,
+    "Overfitting_log": 0.11077632498616952
+  },
+  {
+    "Modelo": "Random Forest",
+    "R2_train_log": 0.9508837212072055,
+    "R2_test_log": 0.5804685818035726,
+    "Overfitting_log": 0.3704151394036329
+  },
+  {
+    "Modelo": "LightGBM",
+    "R2_train_log": 0.6781731469358457,
+    "R2_test_log": 0.5791995123573823,
+    "Overfitting_log": 0.09897363457846342
+  },
+  {
+    "Modelo": "Gradient Boosting",
+    "R2_train_log": 0.6011524527641763,
+    "R2_test_log": 0.531216962747367,
+    "Overfitting_log": 0.06993549001680932
+  },
+  {
+    "Modelo": "Ridge Regression",
+    "R2_train_log": 0.2886316891839691,
+    "R2_test_log": 0.23769770984690552,
+    "Overfitting_log": 0.05093397933706356
+  },
+  {
+    "Modelo": "Linear Regression",
+    "R2_train_log": 0.2886316895303691,
+    "R2_test_log": 0.23769768358812382,
+    "Overfitting_log": 0.050934005942245286
+  },
+  {
+    "Modelo": "Elastic Net",
+    "R2_train_log": 0.2821727408453897,
+    "R2_test_log": 0.23165456347796964,
+    "Overfitting_log": 0.050518177367420036
+  },
+  {
+    "Modelo": "Lasso Regression",
+    "R2_train_log": 0.28066653551690657,
+    "R2_test_log": 0.23079172764220235,
+    "Overfitting_log": 0.04987480787470422
+  },
+  {
+    "Modelo": "Decision Tree",
+    "R2_train_log": 0.9996642904064809,
+    "R2_test_log": 0.22291740334138233,
+    "Overfitting_log": 0.7767468870650985
+  }
+]
