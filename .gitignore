@@ -30,3 +30,5 @@ dist/
 
 models/*.pkl
 
+models/model_bundle.zip
+models/model_bundle.zip
