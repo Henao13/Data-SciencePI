@@ -50,10 +50,12 @@ def train_and_save():
     print(X_train)
 
     model = ExtraTreesRegressor(
-        n_estimators=300,
+        n_estimators=150,     # menos árboles (antes 300/1000)
+        max_depth=12,        # límite de profundidad para reducir tamaño
+        max_features=0.4,    # como en tu búsqueda de hiperparámetros
+        min_samples_leaf=2,  # hojas con algo más de datos → árboles menos grandes
         random_state=42,
         n_jobs=-1,
-
     )
 
     model.fit(X_train, y_train)

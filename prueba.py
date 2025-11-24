@@ -1,37 +1,23 @@
-from app.model_service import predict_single
+import os
+import joblib
 
-"""ejemplo = {
-    "Operario": "Edward Dario Pulgarin Paniagua",
-    "NombreMaquina": "Bordadora 12",
-    "codigoMaterial": "U53554",
+# Ruta al bundle original
+bundle_path = os.path.join("models", "model_bundle.pkl")
+print("Cargando bundle original desde:", bundle_path)
+bundle = joblib.load(bundle_path)
 
-    "Puntadas": 1735.0,
-    "CantidadBuena": 162,
-    "PuntoPlantilla": "1",
+model = bundle["model"]
+metadata = bundle["metadata"]
 
-    "FechaInicio": "2021-06-15 11:21:39.9748690",
-
-    # tiempos asociados al material (los puedes mandar)
-}
-print(predict_single(ejemplo))"""
-
-import json
-from app.lambda_function import handler
-
-ejemplo = {
-    "Operario": "Edward Dario Pulgarin Paniagua",
-    "NombreMaquina": "Bordadora 12",
-    "codigoMaterial": "U53554",
-    "Puntadas": 1735.0,
-    "CantidadBuena": 162,
-    "PuntoPlantilla": "1",
-    "FechaInicio": "2021-06-15 11:21:39.9748690",
+# Construimos un bundle "slim" (solo lo necesario)
+slim_bundle = {
+    "model": model,
+    "metadata": metadata,
 }
 
-event = {
-    "body": json.dumps(ejemplo)  # así lo manda API Gateway normalmente
-}
+slim_path = os.path.join("models", "model_bundle_slim.pkl")
+joblib.dump(slim_bundle, slim_path, compress=3)
 
-resp = handler(event, None)
-print(resp)
-print("Body:", resp["body"])
+size_slim_mb = os.path.getsize(slim_path) / (1024 * 1024)
+print(f"✅ Slim bundle guardado en: {slim_path}")
+print(f"📦 Tamaño del slim bundle: {size_slim_mb:.2f} MB")
